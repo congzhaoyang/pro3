@@ -9,7 +9,10 @@
 <script>
 import Nav from './components/front/Nav/Nav'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Nav
+  }
 }
 </script>
 

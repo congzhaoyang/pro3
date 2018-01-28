@@ -10,12 +10,14 @@
           background-color="#545c64"
           text-color="#fff"
           active-text-color="#ffd04b">
-          <el-menu-item index="1">首页</el-menu-item>
-          <el-menu-item index="2">文章</el-menu-item>
-          <el-menu-item index="3">书架</el-menu-item>
-          <el-menu-item index="5">相册</el-menu-item>
-          <el-menu-item index="6">时间线</el-menu-item>
-          <el-menu-item index="7">关于</el-menu-item>
+          <div class="menu-item-wrap">
+            <el-menu-item index="1">首页</el-menu-item>
+            <el-menu-item index="2">文章</el-menu-item>
+            <el-menu-item index="3">书架</el-menu-item>
+            <el-menu-item index="5">相册</el-menu-item>
+            <el-menu-item index="6">时间线</el-menu-item>
+            <el-menu-item index="7">关于</el-menu-item>
+          </div>
           <!-- <el-submenu index="2">
             <template slot="title">我的工作台</template>
             <el-menu-item index="2-1">选项1</el-menu-item>
@@ -47,6 +49,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scope>
+.el-menu-demo {
+  .menu-item-wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
 </style>
